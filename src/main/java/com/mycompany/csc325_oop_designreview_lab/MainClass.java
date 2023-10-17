@@ -3,9 +3,10 @@
  */
 
 package com.mycompany.csc325_oop_designreview_lab;
+import java.util.Scanner;
 
 /**
- *
+ * @author Sheraz Siddiqi
  * @author MoaathAlrajab
  */
 public class MainClass {
@@ -22,19 +23,33 @@ public class MainClass {
 		// ToDo 9: Add a toString method for the Student class
 		// ToDo 10: Add a toString method for the Freshman class
 
-		Student std1= new Student("James", 20);
+	 Scanner scanner = new Scanner(System.in);
+
+	 Student std1= new Student("James", (short)20, 3.0);
+
+
+	 Freshman fre1 = new Freshman("James", (short)20, 3,16); // Fixed the class
+	 Senior sen1 = new Senior("John", (short)30, 3.5, 90); // Fixed the class
+
+	 //Asks for the freshman Gpa
+	 System.out.print("Enter GPA for freshman: ");
+	 fre1.setGpa(scanner.nextDouble()); // ToDo 12: Set the gpa of the student using the scanner
+
+	 // Asks for the senior Gpa
+	 System.out.print("Enter GPA for senior: ");
+	 sen1.setGpa(scanner.nextDouble());
+
+
                 // ToDo 11: Add a toString method for the Senior class
 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
 
-                Senior std2 = new Student("John", 30, 90);
 
 		// ToDo 12: Set the gpa of the student using the scanner and user
 		// 			input and then print the output.
-
+	 // Prints and display the outputs
 		System.out.println(std1);
-
-                System.out.println(std2);
+		System.out.println(fre1);
+		System.out.println(sen1);
 
 		// ToDo 13: add comments and explain your code
 

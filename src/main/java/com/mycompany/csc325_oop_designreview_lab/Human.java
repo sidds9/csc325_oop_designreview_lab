@@ -5,7 +5,7 @@
 package com.mycompany.csc325_oop_designreview_lab;
 
 /**
- *
+ * @author Sheraz Siddiqi
  * @author MoaathAlrajab
  */
 public abstract class Human {
